@@ -1,2 +1,2 @@
 # kagayasai-towerbattle-sample
-Sample Unity game for familiarizing Kaga vegetables
+Educational Unity game sample for familiarizing Kaga vegetables
