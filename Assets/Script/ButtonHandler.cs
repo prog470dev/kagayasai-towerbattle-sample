@@ -14,7 +14,6 @@ public class ButtonHandler : MonoBehaviour {
     //スタート画面に遷移
     public void OnClickToStart()
     {
-        Debug.Log("clicked..");
         SceneManager.LoadScene("start");
     }
 }

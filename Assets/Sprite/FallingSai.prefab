@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212292866295618826}
   - component: {fileID: 50286531211792800}
   - component: {fileID: 60213032264986748}
-  - component: {fileID: 114369991352954460}
   m_Layer: 0
   m_Name: FallingSai
   m_TagString: FallObject
@@ -127,17 +126,6 @@ PolygonCollider2D:
       - {x: 3.81, y: -1.03}
       - {x: 3.81, y: -0.98999995}
       - {x: 3.79, y: -0.97999996}
---- !u!114 &114369991352954460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1133505422184646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f9a19e8de9e4477cbf11470ec7139d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212292866295618826
 SpriteRenderer:
   m_ObjectHideFlags: 1

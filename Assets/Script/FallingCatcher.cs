@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class FallingCatcher : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 
 	}
@@ -19,8 +17,6 @@ public class FallingCatcher : MonoBehaviour {
 	{
         if (collision.gameObject.CompareTag("FallObject"))
         {
-            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-            //SceneManager.LoadScene(sceneIndex);
             SceneManager.LoadScene("result");
         }	
 	}
