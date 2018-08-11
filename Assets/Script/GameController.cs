@@ -178,7 +178,30 @@ public class GameController : MonoBehaviour {
         return false;
     }
 
+    //List<GameObject> LinkingFind(GameObject node, List<GameObject> visitedObjects){
+
+    //    if(visitedObjects.Contains(node))
+    //    {
+    //        return visitedObjects; 
+    //    }
+    //    visitedObjects.Add(node);
+
+    //    List<GameObject> retList = new List<GameObject>(visitedObjects); 
+
+    //    foreach(GameObject e in hashMap[node])
+    //    {
+    //        List<GameObject> tmpList = LinkingFind(e, visitedObjects);
+    //        if(retList.Count < tmpList.Count){
+    //            retList = new List<GameObject>(tmpList); 
+    //        }
+    //    }
+
+    //    return retList;
+    //}
+
     List<GameObject> LinkingFind(GameObject node, List<GameObject> visitedObjects){
+
+        List<GameObject> retList = new List<GameObject>();
 
         if(visitedObjects.Contains(node))
         {
@@ -186,14 +209,9 @@ public class GameController : MonoBehaviour {
         }
         visitedObjects.Add(node);
 
-        List<GameObject> retList = new List<GameObject>(visitedObjects); 
-
         foreach(GameObject e in hashMap[node])
         {
-            List<GameObject> tmpList = LinkingFind(e, visitedObjects);
-            if(retList.Count < tmpList.Count){
-                retList = new List<GameObject>(tmpList); 
-            }
+            retList.AddRange(LinkingFind(e, visitedObjects));
         }
 
         return retList;
