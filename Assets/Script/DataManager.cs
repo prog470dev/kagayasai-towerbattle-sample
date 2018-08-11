@@ -8,6 +8,9 @@ public class DataManager : MonoBehaviour {
 
     public int score = 0;
 
+    // for 連鎖反応
+    public string shopURL = "http://unity3d.com/";
+
     public static DataManager GetInstance()
     {
         return _singleInstance;

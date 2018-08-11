@@ -8,7 +8,7 @@ public class ResultController : MonoBehaviour {
 
 	void Start () {
         scoreLabel.text = "SCORE：" + DataManager.GetInstance().score;
-	}
+    }
 	
 	void Update () {
 		

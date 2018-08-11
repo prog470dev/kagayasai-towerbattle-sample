@@ -16,4 +16,11 @@ public class ButtonHandler : MonoBehaviour {
     {
         SceneManager.LoadScene("start");
     }
+
+    // for 連鎖反応
+    //URLのページに移動
+    public void OnClickURL()
+    {
+        Application.OpenURL(DataManager.GetInstance().shopURL);
+    }
 }
